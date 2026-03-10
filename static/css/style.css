@@ -1,8 +1,11 @@
 h4 {
-    color: darkred;
-    padding-left: 20px;
+    color: white;
+    padding-left: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
-
+h3 {
+    text-align: center;
+}
 .container {
     padding-left: 0px; 
 }
