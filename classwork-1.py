@@ -1,13 +1,12 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/index')
-def index():
-    title = request.args.get('title', 'Главная страница')
-    return render_template('base.html', title=title)
+@app.route('/index/<title>')
+def index(title):
+    return render_template('base-classwork-1.html', title=title)
 
 
 if __name__ == '__main__':
